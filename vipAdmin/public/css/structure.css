@@ -1,0 +1,152 @@
+body {
+    font-family: "Segoe UI", "DejaVu Sans",Verdana, sans-serif;
+    background-image:-webkit-linear-gradient(#9f0909, #4e0000);
+    background-image:-o-linear-gradient(#9f0909, #4e0000);
+    background-image:linear-gradient(#9f0909, #4e0000);
+    background-size: 1rem 200rem;
+    font-size:0.8em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #000000;
+}
+.monBody #container {
+    width: 1300px;
+    margin: 0 auto;
+    background:#ffffff;
+}
+.monBody #header {
+    height:140px;
+    background-color:#000;
+    color:#fff;
+}
+
+#header div{
+     display: inline-block;
+}
+
+#header a{
+     font-size: 20px;
+     padding-top: 50px;
+     padding-left: 50px;
+}
+
+.menu_haut {background-color:#000;color:#fff;margin-top:-13px;width:100%;}
+.menu_haut ul {
+	width:100%;
+	text-align:center;
+	height:30px;
+	margin-left:-50px;
+	margin-right:-50px;
+	}
+.menu_haut li {
+	text-decoration:none;
+	font-weight:bold;
+	display:inline;
+	font-size:14px;
+	padding:10px 10px 10px 10px;
+	color:#fff;
+	}
+.menu_haut li a {
+	color: #fff;
+	text-decoration: none;
+	display: inline;
+	height: 100%;
+	border: 0 none;
+}
+.menu_haut li a:hover {
+	color:#000;
+	background:#eee;
+}
+
+
+.monBody #contenu {
+    padding:20px;
+    overflow: auto;
+}
+.monBody #footer {
+    padding: 0 10px;
+    font-size:0.8em;
+    text-align:center;
+    height:150px;
+    background:url(/image/footer.jpg) no-repeat;
+}
+.baniere{float:left;
+  margin-top:20px;
+  margin-left:5px;
+  border:none;}
+.baniere img{
+  border:none;
+}
+
+#LogoNode {
+    max-height: 20%;
+    max-width: 20%;
+}
+
+a  {
+     display: inline-block;
+    text-decoration:none;
+    color:#0072ff;
+}
+
+.traitVertical {
+  border-left: 1px white solid;
+}
+
+.traitHorizontal {
+  border-top: 1px white solid;
+}
+
+span{
+     font-weight: bold;
+}
+
+h1{
+     margin-bottom: 10%;
+     margin-top: -5%;
+}
+
+/*.AdminCo{
+     background-color: black;
+     color : white;
+     padding: 5%;
+     margin: 0% 15% 0% 15%;
+}
+
+.AdminCo button{
+     margin: 0% 2% 0% 2%;
+}
+*/
+.co , .co a{
+     font-size: 20px;
+     color: white;
+}
+.co a{
+     padding-left: 0px;
+}
+.AdminVipsPartial{
+     border: 1px solid black;
+     background-color: black;
+     border-radius: 10px;
+     width: 20%;
+     float: left;
+     text-align: center;
+     margin-right: 50px;
+}
+
+.AdminVipsPartial table{
+     border-radius: 10px;
+     display: inline-block;
+     color: white;
+}
+
+.AdminVipsPartial a{
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+}
+
+.adminVips label{
+     float: left;
+}

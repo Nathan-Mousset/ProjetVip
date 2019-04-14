@@ -1,0 +1,12 @@
+{{> listeLettresPartial}}
+<br>
+{{#each vipL}}
+<div class="listeVip">
+
+     <a href="/repertoire/vip/{{this.VIP_NUMERO}}">
+          <img src="/images/vip/{{this.PHOTO_ADRESSE}}" alt=""/>
+          <p>{{this.VIP_NOM   }} {{this.VIP_PRENOM}}</p>
+     </a>
+
+</div>
+{{/each}}

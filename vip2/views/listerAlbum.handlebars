@@ -1,0 +1,19 @@
+
+{{> tableAlbumPartial}}
+
+<div id="easyPaginatePhoto" class="divGlobComm">
+  {{#each commentairePhoto}}
+    <div class="">
+      <p class="nom np">{{this.VIP_PRENOM}} {{this.VIP_NOM}}</p>
+      <img src="/images/vip/{{this.PHOTO_ADRESSE}}" alt="oups" id="imgAlbum">
+      <fieldset id="fieldsetComm">
+        <legend>Commentaire</legend>
+        {{#ifCond this.PHOTO_COMMENTAIRE '!=' null}}
+          <p id="comm">{{this.PHOTO_COMMENTAIRE}}</p>
+        {{else}}
+          <p style="display:inline-block;">Cette photo ne possède pas de commentaire.</p>
+        {{/ifCond}}
+      </fieldset>
+    </div>
+  {{/each}}
+</div>

@@ -1,0 +1,30 @@
+{{> menuVipsPartial }}
+
+<div class="adminVips">
+     <fieldset>
+          <legend>Ajouter vips</legend>
+          <form action="/administration/vips/modifVip" method="post">
+               <label>Choisir un vip à modifier :</label> <select  name="vip"> {{#each vips}} <option value="{{this.VIP_NUMERO}}">{{this.VIP_NOM}} {{this.VIP_PRENOM}}</option> {{/each}}    </select>
+               <br> <br>
+               <label>Nom :</label> <input type="text" name="nom">
+               <br> <br>
+               <label>Prénom :</label> <input type="text" name="prenom">
+               <br> <br>
+               <label>Sexe :</label> <select name="sexe"> <option value="M">Masculin</option> <option value="F">Feminin</option> </select>
+               <br> <br>
+               <label>Date de naissance :</label> <input type="date" name="datenaissance">
+               <br> <br>
+               <label>Nationalité :</label> <select  name="nationalite"> {{#each nationalites}} <option value="{{this.NATIONALITE_NUMERO}}">{{this.NATIONALITE_NOM}}</option> {{/each}}    </select>
+               <br> <br>
+               <label>Commentaire :</label> <textarea name="commentaire" rows="6" cols="60"></textarea>
+               <br> <br>
+               <label>Photo :</label> <input type="file" name="photo">
+               <br> <br>
+               <label>Sujet photo :</label> <input type="text" name="photo_sujet">
+               <br> <br>
+               <label>Commentaire photo :</label> <textarea name="photo_commentaire" rows="4" cols="40"></textarea>
+               <br> <br>
+               <button type="submit" name="valider">Valider</button>
+          </form>
+     </fieldset>
+</div>

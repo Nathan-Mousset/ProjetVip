@@ -1,0 +1,17 @@
+<div class="AffArt">
+     <div class="articles">
+          {{#each articles}}
+          <fieldset>
+               <legend>Article</legend>
+                    {{this.ARTICLE_RESUME}}<br>
+                    <div class="">
+                         <span>Ajouter le {{formatDate this.ARTICLE_DATE_INSERT 'D MMMM YYYY' }}</span>
+                         <a href="/repertoire/vip/{{this.VIP_NUMERO}}">Voir sa fiche</a>
+                    </div>
+          </fieldset>
+          {{/each}}
+     </div>
+     <div class="listeVipArt">
+          {{> listeVipWithArticle}}
+     </div>
+</div>

@@ -1,0 +1,13 @@
+{{> menuVipsPartial }}
+
+<div class="adminVips">
+     <fieldset>
+          <legend>Supprimer vips</legend>
+          <form action="/administration/vips/supprimerVip" method="post">
+
+               Choisir un vip à supprimer : <select  name="vip"> {{#each vips}} <option value="{{this.VIP_NUMERO}}">{{this.VIP_NOM}} {{this.VIP_PRENOM}}</option> {{/each}}    </select>
+               <br> <br>
+               <button type="submit" name="valider">Valider</button>
+          </form>
+     </fieldset>
+</div>
